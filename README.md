@@ -1,2 +1,2 @@
-### <a href="https://masrulsakib.github.io/Fashion-website-with--Tailwind/">An E-learning Platform website</a>
+### <a href="https://masrulsakib.github.io/Educational-website/index.html">An E-learning Platform website</a>
 # Educational-website
