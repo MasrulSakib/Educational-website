@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+
     <title>Purpose Edu</title>
 </head>
 
@@ -48,68 +49,58 @@
 
         <!-- slider start -->
         <section class="container">
-            <div id="carouselExampleCaptions" class="carousel slide">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active ">
-                        <div class="bg-image">
-                            <img src="images/cover/happy-agent-customer-service-760.png" class="d-block w-100"
-                                alt="...">
-                        </div>
-                        <div class="carousel-caption bg-text">
-                            <h1 class="fw-bold text-md-h3">The Power of Learning: Embrace New Horizons.
-                            </h1>
-                            <p>Learning something new opens doors to endless possibilities,
-                                expands our
-                                horizons, and
-                                enriches our lives with knowledge and growth.</p>
-                            <button type="button" class="btn btn-info fw-semibold text-light">Get Started</button>
-                        </div>
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+                </ol>
 
+                <!-- Slides -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/cover/happy-agent-customer-service-760.png" alt="Slide 1"
+                            class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h3>The Power of Learning: Embrace New Horizons.</h3>
+                            <p>Learning something new opens doors to endless possibilities and
+                                enriches our lives with knowledge and growth.</p>
+                            <a href="#" class="btn btn-info">Learn More</a>
+                        </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="bg-image">
-                            <img src="images/cover/Customer-Service-Agent-Training-4.21.21-1920x1080.png"
-                                class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-caption bg-text">
-                            <h1 class="fw-bold ">Embrace Growth: Discover the Joy of Learning.</h1>
-                            <p>Learning something new is an exhilarating journey that broadens our perspectives, ignites
-                                curiosity, fuels personal growth, and unlocks untapped potential within us.</p>
-                            <button type="button" class="btn btn-info fw-semibold text-light">Get Started</button>
+                        <img src="images/cover/Customer-Service-Agent-Training-4.21.21-1920x1080.png" alt="Slide 2"
+                            class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h3>Embrace Growth: Discover the Joy of Learning.</h3>
+                            <p>Learning something new is an exhilarating journey that broadens our perspectives and
+                                fuels personal growth.</p>
+                            <a href="#" class="btn btn-info">Learn More</a>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="bg-image">
-                            <img src="images/cover/empowering-agents.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-caption bg-text">
-                            <h1 class="fw-bold ">Unleash Your Potential: Embrace Lifelong Learning.</h1>
+                        <img src="images/cover/empowering-agents.png" alt="Slide 3" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h3>Unleash Your Potential: Embrace Lifelong Learning.</h3>
                             <p>Learning something new is an adventure that fuels our intellect, nurtures creativity,
-                                builds confidence, and equips us with valuable skills for personal and professional
-                                success.</p>
-                            <button type="button" class="btn btn-info fw-semibold text-light">Get Started</button>
+                                builds confidence.</p>
+                            <a href="#" class="btn btn-info">Learn More</a>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
+
+                <!-- Controls -->
+                <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
-                </button>
+                </a>
             </div>
+
         </section>
 
         <!-- mid section -->
@@ -121,11 +112,11 @@
             </div>
             <div class="row gap-0 row-gap-2">
                 <div class="col-lg-6 col-md-12 col-sm-12">
-                    <div class="card mb-3" style="max-width: auto;">
+                    <div class="card mb-3" style="max-width: auto">
                         <div class="row g-0">
                             <div class="col-md-4">
                                 <img src="images/courses/118755471-cf58b300-b860-11eb-979a-16d263b320a8(1).png"
-                                    class="img-fluid rounded-start" alt="...">
+                                    class="img-fluid rounded-start w-100%" alt="Responsive image">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body lh-sm">
@@ -140,7 +131,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12">
-                    <div class="card mb-3" style="max-width: auto;;">
+                    <div class="card mb-3" style="max-width: auto;">
                         <div class="row g-0">
                             <div class="col-md-4">
                                 <img src="images/courses/1639098577ms-excel-training-courses(1).png"
@@ -148,10 +139,11 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body lh-sm">
-                                    <h5 class="card-title">MongoDB Full Course</h5>
-                                    <p class="card-text">Knowing MongoDB is crucial for developers as it offers scalable
-                                        NoSQL database solution for efficient data management.</p>
-                                    <p class="text-info fw-semibold">Price: 20$</p>
+                                    <h5 class="card-title">Microsoft Excel Crush Course</h5>
+                                    <p class="card-text">Microsoft Excel Crash Course: Learn essential functions,
+                                        formulas, data analysis, and visualization techniques in this comprehensive
+                                        20-hour training.</p>
+                                    <p class="text-info fw-semibold">Price: 10$</p>
 
                                 </div>
                             </div>
@@ -159,17 +151,18 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12">
-                    <div class="card mb-3" style="max-width: auto;;">
+                    <div class="card mb-3" style="max-width: auto;">
                         <div class="row g-0">
                             <div class="col-md-4">
                                 <img src="images/courses/nuxt.png" class="img-fluid rounded-start" alt="...">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body lh-sm">
-                                    <h5 class="card-title">MongoDB Full Course</h5>
-                                    <p class="card-text">Knowing MongoDB is crucial for developers as it offers scalable
-                                        NoSQL database solution for efficient data management.</p>
-                                    <p class="text-info fw-semibold">Price: 20$</p>
+                                    <h5 class="card-title">NuxtJS Beginners Course</h5>
+                                    <p class="card-text">NuxtJS Beginners Course: Get started with NuxtJS, a powerful
+                                        framework for building Vue.js applications, through this beginner-friendly and
+                                        hands-on training.</p>
+                                    <p class="text-info fw-semibold">Price: 15$</p>
 
                                 </div>
                             </div>
@@ -184,10 +177,11 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body lh-sm">
-                                    <h5 class="card-title">MongoDB Full Course</h5>
-                                    <p class="card-text">Knowing MongoDB is crucial for developers as it offers scalable
-                                        NoSQL database solution for efficient data management.</p>
-                                    <p class="text-info fw-semibold">Price: 20$</p>
+                                    <h5 class="card-title">VueJS Full course</h5>
+                                    <p class="card-text">VueJS Full Course: Master Vue.js, a progressive JavaScript
+                                        framework, through this comprehensive training covering components, state
+                                        management, routing, and more in 20 hours.</p>
+                                    <p class="text-info fw-semibold">Price: 25$</p>
 
                                 </div>
                             </div>
@@ -202,9 +196,10 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body lh-sm">
-                                    <h5 class="card-title">MongoDB Full Course</h5>
-                                    <p class="card-text">Knowing MongoDB is crucial for developers as it offers scalable
-                                        NoSQL database solution for efficient data management.</p>
+                                    <h5 class="card-title">ReactJS Full Course</h5>
+                                    <p class="card-text">ReactJS Full Course: Dive into React.js, a popular JavaScript
+                                        library, with this comprehensive training covering components, state management,
+                                        hooks, and advanced concepts in 20 hours.</p>
                                     <p class="text-info fw-semibold">Price: 20$</p>
 
                                 </div>
@@ -221,10 +216,11 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body lh-sm">
-                                    <h5 class="card-title">MongoDB Full Course</h5>
-                                    <p class="card-text">Knowing MongoDB is crucial for developers as it offers scalable
-                                        NoSQL database solution for efficient data management.</p>
-                                    <p class="text-info fw-semibold">Price: 20$</p>
+                                    <h5 class="card-title">Python Advance Crush Course</h5>
+                                    <p class="card-text">Python Advanced Crash Course: Accelerate your Python skills
+                                        with this intensive training, covering advanced topics, algorithms, data
+                                        structures, and practical applications.</p>
+                                    <p class="text-info fw-semibold">Price: 30$</p>
 
                                 </div>
                             </div>
@@ -241,13 +237,13 @@
 
         <section>
             <div class="container bg-gray-200 d-flex justify-content-center">
-                <div class="card mb-3" style="max-width: 1320; min-width: 540;">
-                    <div class="row g-0">
-                        <div class="col-md-4">
+                <div class="card mb-3" style="max-width: auto;">
+                    <div class="row row-cols-1 row-cols-lg-2 row-cols-md-1 g-0">
+                        <div class="col">
                             <img src="images/241a1a35c764d714102fcb969c323634.jpg" class="img-fluid rounded-start"
-                                alt="...">
+                                alt="..." style="height: fit-content;">
                         </div>
-                        <div class="col-md-8">
+                        <div class="col">
                             <div class="mx-5 card-body">
                                 <h2 class="pb-5 card-title">Know More About Our E learning Platform</h2>
                                 <div class="overflow-auto p-3 bg-light" style="max-width: auto; max-height: 150px;">
@@ -294,16 +290,17 @@
                                 </div>
 
 
-                                <div class="pt-2 d-flex justify-content-between">
-                                    <div>
+                                <div
+                                    class="row row-cols-2 row-cols-lg-3 row-cols-md-2 pt-2 d-flex justify-content-between">
+                                    <div class="col">
                                         <h2>2K+</h2>
                                         <p><small>online courses</small> </p>
                                     </div>
                                     <div>
-                                        <h2>450+</h2>
+                                        <h2 class="col">450+</h2>
                                         <p><small>expert members</small> </p>
                                     </div>
-                                    <div>
+                                    <div class="col">
                                         <h2>2k+</h2>
                                         <p><small>ratings & reviews</small> </p>
                                     </div>
@@ -320,7 +317,7 @@
         <!-- 4th panal -->
         <section>
             <div class="container ">
-                <div class="d-flex flex-row card text-bg-info my-5 p-5 align-middle"
+                <div class="d-lg-flex flex-lg-row card text-bg-info my-5 p-5 text-center"
                     style="max-width:auto; max-height: 300px;">
                     <div class="card-body text-light">
                         <h2>Join Us Today</h2>
@@ -328,9 +325,45 @@
                             growth,
                             innovation, and endless possibilities. Don't miss out.</p>
                     </div>
-                    <div class="align-middle">
-                        <button type="button" class="btn btn-light btn-lg fw-semibold text-info mt-4">Join
-                            Us</button>
+                    <div class="align-middle pt-4">
+                        <div>
+                            <!-- Scrollable modal -->
+                            <div>
+                                <button type="button" class="btn btn-light text-info" data-bs-toggle="modal"
+                                    data-bs-target="#randomModal">
+                                    Join Us
+                                </button>
+                            </div>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="randomModal" tabindex="-1" aria-labelledby="randomModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="randomModalLabel">Register Now</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                Register now and unlock a world of possibilities! By signing up, you
+                                                gain
+                                                access to exclusive features, personalized content, and a vibrant
+                                                community.
+                                                Don't miss out on this opportunity to connect, learn, and grow. Join us
+                                                today and embark on an exciting journey towards new opportunities and
+                                                experiences!
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-info"
+                                                data-bs-dismiss="modal">Register</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 

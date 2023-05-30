@@ -1,25 +1,76 @@
-.bg-image {
-    /* Add the blur effect */
-    filter: blur(2px);
-    -webkit-filter: blur(2px);
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    z-index: 1;
+}
+
+
+
+.carousel-caption {
+
+    top: 50%;
+    z-index: 2;
+    transform: translateY(-50%);
+    text-align: center;
 
 
 }
 
-/* Position text in the middle of the page/image */
-.bg-text {
+.carousel-caption h3,
+.carousel-caption p {
+    color: #fff;
+}
 
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.4);
+.carousel-caption .btn {
+    margin-top: 10px;
+}
 
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 50%;
-    height: 40%;
-    padding: 20px;
-    text-align: center;
+@media (max-width: 576px) {
+    .carousel-caption h3 {
+
+        font-size: 18px;
+    }
+
+    .carousel-caption p {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+    .carousel-caption h3 {
+        font-size: 24px;
+    }
+
+    .carousel-caption p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 991px) {
+    .carousel-caption {
+        top: 0;
+        bottom: auto;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 991px) {
+    .carousel-indicators {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-caption {
+        padding-bottom: 20px;
+    }
+
+    .carousel-caption .btn {
+        margin-top: -7.5px;
+    }
 }
